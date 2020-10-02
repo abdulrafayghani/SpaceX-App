@@ -1,10 +1,6 @@
-import React, { FC } from 'react'
-import { LaunchesPastResult } from '../../generated/graphql'
+import React, { FC, Fragment } from 'react';
+import { LaunchesPastResult } from '../../generated/graphql';
 
-export const LaunchList: FC<LaunchesPastResult> = ( { data } ) => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+export const LaunchList: FC<LaunchesPastResult> = ({ data }) => {
+  return <Fragment></Fragment>;
+};
