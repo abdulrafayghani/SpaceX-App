@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Header } from "./components/header/Header";
+import { Routes, Route } from 'react-router-dom';
+import { Header } from './components/header/Header';
 import { Home } from './components/Home/Home';
 import { LaunchDetails } from './components/launchDetails/LaunchDetails';
 import { Launches } from './components/launches/Launches';
@@ -9,14 +9,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/launches" element={<Launches />}>
-            <Route path="/launches/:id" element={<LaunchDetails />}></Route>
-          </Route>
-        </Routes>
-      </Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/launches" element={<Launches />} />
+        <Route path="/launches/:id" element={<LaunchDetails />} />
+      </Routes>
     </div>
   );
 }
