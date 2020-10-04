@@ -68,7 +68,9 @@ export const Header = () => {
               >
                 <MenuIcon />
               </Button>
+              <Box>
               <Drawer open={value} handleOpen={handleOpen} />
+              </Box>
             </Box>
           </Toolbar>
         </AppBar>
